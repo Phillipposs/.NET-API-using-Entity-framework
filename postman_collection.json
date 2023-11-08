@@ -1,0 +1,428 @@
+{
+	"info": {
+		"_postman_id": "17ca30ab-45cf-4f8a-8777-04662b6150a8",
+		"name": "HTEC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateNewLeague",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n   \"leaguetitle\":\"Champions League 2017/2018\",\r\n   \"groups\":[  \r\n      {  \r\n         \"title\":\"A\",\r\n         \"teams\":[  \r\n            \"Borussia Dortmund\",\r\n            \"Atlético Madrid\",\r\n            \"Club Brugge\",\r\n            \"Monaco\"\r\n         ]\r\n      },\r\n      {  \r\n         \"title\":\"B\",\r\n         \"teams\":[  \r\n            \"PSG\",\r\n            \"Arsenal\",\r\n            \"Basel\",\r\n            \"Ludogorets\"\r\n         ]\r\n      },\r\n      {  \r\n         \"title\":\"C\",\r\n         \"teams\":[  \r\n            \"Genoa\",\r\n            \"Sampdoria\",\r\n            \"Juventus\",\r\n            \"Torino\"\r\n         ]\r\n      },\r\n      {  \r\n         \"title\":\"D\",\r\n         \"teams\":[  \r\n            \"Napoli\",\r\n            \"Atalanta\",\r\n            \"Chievo\",\r\n            \"Fiorentina\"\r\n         ]\r\n      },\r\n      {  \r\n         \"title\":\"E\",\r\n         \"teams\":[  \r\n            \"Werder Bremen\",\r\n            \"VfL Wolfsburg\",\r\n            \"1. FSV Mainz 05\",\r\n            \"Hamburger SV\"\r\n         ]\r\n      },\r\n      {  \r\n         \"title\":\"F\",\r\n         \"teams\":[  \r\n            \"Udinese\",\r\n            \"Sassuolo\",\r\n            \"Bologna\",\r\n            \"Cagliari\"\r\n         ]\r\n      },\r\n      {  \r\n         \"title\":\"G\",\r\n         \"teams\":[  \r\n            \"Crotone\",\r\n            \"Verona\",\r\n            \"SPAL\",\r\n            \"Benevento\"\r\n         ]\r\n      },\r\n      {  \r\n         \"title\":\"H\",\r\n         \"teams\":[  \r\n            \"FC Bayern München\",\r\n            \"Schalke\",\r\n            \"Hannover 96\",\r\n            \"Eintracht Frankfurt\"\r\n         ]\r\n      }\r\n   ]\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44301/league/createnewleague",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44301",
+					"path": [
+						"league",
+						"createnewleague"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateMatchScores",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"leagueTitle\": \"Champions League 2017/2018\",\r\n        \"matchDay\": 3,\r\n        \"group\": \"A\",\r\n        \"groupid\":1,\r\n        \"homeTeam\": \"Borussia Dortmund\",\r\n        \"awayTeam\": \"Atlético Madrid\",\r\n        \"kickOffAt\": \"9/13/2017 8:45:00 PM\",\r\n        \"score\": \"1:1\"\r\n    },\r\n    {\r\n        \"leagueTitle\": \"Champions League 2017/2018\",\r\n        \"matchDay\": 2,\r\n        \"group\": \"A\",\r\n        \"groupid\":1,\r\n        \"homeTeam\": \"Borussia Dortmund\",\r\n        \"awayTeam\": \"Club Brugge\",\r\n        \"kickOffAt\": \"9/13/2017 8:45:00 PM\",\r\n        \"score\": \"1:1\"\r\n    },\r\n    {\r\n        \"leagueTitle\": \"Champions League 2017/2018\",\r\n        \"matchDay\": 6,\r\n        \"group\": \"A\",\r\n        \"groupid\":1,\r\n        \"homeTeam\": \"Borussia Dortmund\",\r\n        \"awayTeam\": \"Monaco\",\r\n        \"kickOffAt\": \"9/28/2017 8:45:00 PM\",\r\n        \"score\": \"2:0\"\r\n    },\r\n    {\r\n        \"leagueTitle\": \"Champions League 2017/2018\",\r\n        \"matchDay\": 1,\r\n        \"group\": \"A\",\r\n        \"groupid\":1,\r\n        \"homeTeam\": \"Atlético Madrid\",\r\n        \"awayTeam\": \"Borussia Dortmund\",\r\n        \"kickOffAt\": \"9/28/2017 8:45:00 PM\",\r\n        \"score\": \"1:3\"\r\n    },\r\n    {\r\n        \"leagueTitle\": \"Champions League 2017/2018\",\r\n        \"matchDay\": 4,\r\n        \"group\": \"A\",\r\n        \"groupid\":1,\r\n        \"homeTeam\": \"Atlético Madrid\",\r\n        \"awayTeam\": \"Club Brugge\",\r\n        \"kickOffAt\": \"9/13/2017 8:45:00 PM\",\r\n        \"score\": \"4:2\"\r\n    },\r\n    {\r\n        \"leagueTitle\": \"Champions League 2017/2018\",\r\n        \"matchDay\": 2,\r\n        \"group\": \"A\",\r\n        \"groupid\":1,\r\n        \"homeTeam\": \"Atlético Madrid\",\r\n        \"awayTeam\": \"Monaco\",\r\n        \"kickOffAt\": \"9/13/2017 8:45:00 PM\",\r\n        \"score\": \"3:2\"\r\n    },\r\n    {\r\n        \"leagueTitle\": \"Champions League 2017/2018\",\r\n        \"matchDay\": 5,\r\n        \"group\": \"A\",\r\n        \"groupid\":1,\r\n        \"homeTeam\": \"Club Brugge\",\r\n        \"awayTeam\": \"Borussia Dortmund\",\r\n        \"kickOffAt\": \"9/13/2017 8:45:00 PM\",\r\n        \"score\": \"1:1\"\r\n    },\r\n    {\r\n        \"leagueTitle\": \"Champions League 2017/2018\",\r\n        \"matchDay\": 6,\r\n        \"group\": \"A\",\r\n        \"groupid\":1,\r\n        \"homeTeam\": \"Club Brugge\",\r\n        \"awayTeam\": \"Atlético Madrid\",\r\n        \"kickOffAt\": \"9/13/2017 8:45:00 PM\",\r\n        \"score\": \"2:9\"\r\n    },\r\n    {\r\n        \"leagueTitle\": \"Champions League 2017/2018\",\r\n        \"matchDay\": 1,\r\n        \"group\": \"A\",\r\n        \"groupid\":1,\r\n        \"homeTeam\": \"Club Brugge\",\r\n        \"awayTeam\": \"Monaco\",\r\n        \"kickOffAt\": \"9/13/2017 8:45:00 PM\",\r\n        \"score\": \"10:1\"\r\n    },\r\n    {\r\n        \"leagueTitle\": \"Champions League 2017/2018\",\r\n        \"matchDay\": 4,\r\n        \"group\": \"A\",\r\n        \"groupid\":1,\r\n        \"homeTeam\": \"Monaco\",\r\n        \"awayTeam\": \"Borussia Dortmund\",\r\n        \"kickOffAt\": \"9/13/2017 8:45:00 PM\",\r\n        \"score\": \"20:2\"\r\n    },\r\n    {\r\n        \"leagueTitle\": \"Champions League 2017/2018\",\r\n        \"matchDay\": 5,\r\n        \"group\": \"A\",\r\n        \"groupid\":1,\r\n        \"homeTeam\": \"Monaco\",\r\n        \"awayTeam\": \"Atlético Madrid\",\r\n        \"kickOffAt\": \"9/13/2017 8:45:00 PM\",\r\n        \"score\": \"1:1\"\r\n    },\r\n    {\r\n        \"leagueTitle\": \"Champions League 2017/2018\",\r\n        \"matchDay\": 3,\r\n        \"group\": \"A\",\r\n        \"groupid\":1,\r\n        \"homeTeam\": \"Monaco\",\r\n        \"awayTeam\": \"Club Brugge\",\r\n        \"kickOffAt\": \"9/13/2017 8:45:00 PM\",\r\n        \"score\": \"3:3\"\r\n    },\r\n    {\r\n        \"leagueTitle\": \"Champions League 2017/2018\",\r\n        \"matchDay\": 1,\r\n        \"group\": \"B\",\r\n        \"groupid\":2,\r\n        \"homeTeam\": \"PSG\",\r\n        \"awayTeam\": \"Arsenal\",\r\n        \"kickOffAt\": \"\",\r\n        \"score\": \"\"\r\n    },\r\n    {\r\n        \"leagueTitle\": \"Champions League 2017/2018\",\r\n        \"matchDay\": 3,\r\n        \"group\": \"B\",\r\n        \"groupid\":2,\r\n        \"homeTeam\": \"PSG\",\r\n        \"awayTeam\": \"Basel\",\r\n        \"kickOffAt\": \"\",\r\n        \"score\": \"\"\r\n    },\r\n    {\r\n        \"leagueTitle\": \"Champions League 2017/2018\",\r\n        \"matchDay\": 5,\r\n        \"group\": \"B\",\r\n        \"groupid\":2,\r\n        \"homeTeam\": \"PSG\",\r\n        \"awayTeam\": \"Ludogorets\",\r\n        \"kickOffAt\": \"12/7/2017 8:45:00 PM\",\r\n        \"score\": \"1:4\"\r\n    },\r\n    {\r\n        \"leagueTitle\": \"Champions League 2017/2018\",\r\n        \"matchDay\": 4,\r\n        \"group\": \"B\",\r\n        \"groupid\":2,\r\n        \"homeTeam\": \"Arsenal\",\r\n        \"awayTeam\": \"PSG\",\r\n        \"kickOffAt\": \"\",\r\n        \"score\": \"\"\r\n    },\r\n    {\r\n        \"leagueTitle\": \"Champions League 2017/2018\",\r\n        \"matchDay\": 5,\r\n        \"group\": \"B\",\r\n\t\t\"groupid\":2,\r\n        \"homeTeam\": \"Arsenal\",\r\n        \"awayTeam\": \"Basel\",\r\n        \"kickOffAt\": \"\",\r\n        \"score\": \"\"\r\n    },\r\n    {\r\n        \"leagueTitle\": \"Champions League 2017/2018\",\r\n        \"matchDay\": 3,\r\n        \"group\": \"B\",\r\n\t\t\"groupid\":2,\r\n        \"homeTeam\": \"Arsenal\",\r\n        \"awayTeam\": \"Ludogorets\",\r\n        \"kickOffAt\": \"\",\r\n        \"score\": \"\"\r\n    },\r\n    {\r\n        \"leagueTitle\": \"Champions League 2017/2018\",\r\n        \"matchDay\": 2,\r\n        \"group\": \"B\",\r\n\t\t\"groupid\":2,\r\n        \"homeTeam\": \"Basel\",\r\n        \"awayTeam\": \"PSG\",\r\n        \"kickOffAt\": \"\",\r\n        \"score\": \"\"\r\n    },\r\n    {\r\n        \"leagueTitle\": \"Champions League 2017/2018\",\r\n        \"matchDay\": 1,\r\n        \"group\": \"B\",\r\n        \"groupid\":2,\r\n        \"homeTeam\": \"Ludogorets\",\r\n        \"awayTeam\": \"Basel\",\r\n        \"kickOffAt\": \"12/7/2017 8:45:00 PM\",\r\n        \"score\": \"2:2\"\r\n    }\r\n   \r\n]"
+				},
+				"url": {
+					"raw": "https://localhost:44301/matches/updatematchscores",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44301",
+					"path": [
+						"matches",
+						"updatematchscores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetGroupsWithTeams",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44301/groups/getgroupswithteams/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44301",
+					"path": [
+						"groups",
+						"getgroupswithteams",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMatchesFromLeague - All",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44301/matches/getmatchesfromleague/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44301",
+					"path": [
+						"matches",
+						"getmatchesfromleague",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMatchesFromLeague Filter By Day and Group",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44301/matches/getmatchesfromleague/1?filterByGroup=true&filterByDay=true&groupId=1&matchDay=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44301",
+					"path": [
+						"matches",
+						"getmatchesfromleague",
+						"1"
+					],
+					"query": [
+						{
+							"key": "filterByGroup",
+							"value": "true"
+						},
+						{
+							"key": "filterByDay",
+							"value": "true"
+						},
+						{
+							"key": "groupId",
+							"value": "1"
+						},
+						{
+							"key": "matchDay",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMatchesFromLeague Filter By Group",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44301/matches/getmatchesfromleague/1?filterByGroup=true&filterByDay=true&groupId=1&matchDay=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44301",
+					"path": [
+						"matches",
+						"getmatchesfromleague",
+						"1"
+					],
+					"query": [
+						{
+							"key": "filterByGroup",
+							"value": "true"
+						},
+						{
+							"key": "filterByDay",
+							"value": "true"
+						},
+						{
+							"key": "groupId",
+							"value": "1"
+						},
+						{
+							"key": "matchDay",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMatchesFromLeague Filter By Day",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44301/matches/getmatchesfromleague/1?filterByGroup=true&filterByDay=true&groupId=1&matchDay=2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44301",
+					"path": [
+						"matches",
+						"getmatchesfromleague",
+						"1"
+					],
+					"query": [
+						{
+							"key": "filterByGroup",
+							"value": "true"
+						},
+						{
+							"key": "filterByDay",
+							"value": "true"
+						},
+						{
+							"key": "groupId",
+							"value": "1"
+						},
+						{
+							"key": "matchDay",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllLeagues",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44301/league/getallleagues",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44301",
+					"path": [
+						"league",
+						"getallleagues"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTeamStandings",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44301/league/getteamstandings/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44301",
+					"path": [
+						"league",
+						"getteamstandings",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

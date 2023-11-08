@@ -1,0 +1,77 @@
+{  
+   "leaguetitle":"Champions League 2017/2018",
+   "groups":[  
+      {  
+         "title":"A",
+         "teams":[  
+            "Borussia Dortmund",
+            "Atlético Madrid",
+            "Club Brugge",
+            "Monaco"
+         ]
+      },
+      {  
+         "title":"B",
+         "teams":[  
+            "PSG",
+            "Arsenal",
+            "Basel",
+            "Ludogorets"
+         ]
+      },
+      {  
+         "title":"C",
+         "teams":[  
+            "Genoa",
+            "Sampdoria",
+            "Juventus",
+            "Torino"
+         ]
+      },
+      {  
+         "title":"D",
+         "teams":[  
+            "Napoli",
+            "Atalanta",
+            "Chievo",
+            "Fiorentina"
+         ]
+      },
+      {  
+         "title":"E",
+         "teams":[  
+            "Werder Bremen",
+            "VfL Wolfsburg",
+            "1. FSV Mainz 05",
+            "Hamburger SV"
+         ]
+      },
+      {  
+         "title":"F",
+         "teams":[  
+            "Udinese",
+            "Sassuolo",
+            "Bologna",
+            "Cagliari"
+         ]
+      },
+      {  
+         "title":"G",
+         "teams":[  
+            "Crotone",
+            "Verona",
+            "SPAL",
+            "Benevento"
+         ]
+      },
+      {  
+         "title":"H",
+         "teams":[  
+            "FC Bayern München",
+            "Schalke",
+            "Hannover 96",
+            "Eintracht Frankfurt"
+         ]
+      }
+   ]
+}
